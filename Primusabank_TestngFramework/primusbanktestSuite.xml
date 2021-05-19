@@ -1,0 +1,24 @@
+<suite name="primusbank test suite">
+
+<test name="Admin login testcase">
+	<parameter name="uid" value="Admin"></parameter>
+	<parameter name="pwd" value="Admin"></parameter>
+	<classes>
+		<class name="primusbank.tests.AdminLoginTest"></class>
+	</classes>
+</test>   
+
+ 
+	<test name="Banker login testcase">
+	<parameter name="brname" value="Kakinada"></parameter>
+	<parameter name="uid" value="gopiqedge"></parameter>
+	<parameter name="pwd" value="Admin"></parameter>
+	<classes>
+	<class name="primusbank.tests.BankerLoginTest"></class>
+	</classes>
+
+	</test>  
+
+
+
+</suite>

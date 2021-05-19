@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [primusbank test suite]">
+  <parameter name="uid" value="gopiqedge"/>
+  <parameter name="pwd" value="Admin"/>
+  <parameter name="brname" value="Kakinada"/>
+  <test name="Admin login testcase(failed)">
+    <parameter name="uid" value="Admin"/>
+    <parameter name="pwd" value="Admin"/>
+    <classes>
+      <class name="primusbank.tests.BankerLoginTest">
+        <methods>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- primusbank.tests.BankerLoginTest -->
+      <class name="primusbank.tests.AdminLoginTest">
+        <methods>
+          <include name="checkAdminLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- primusbank.tests.AdminLoginTest -->
+    </classes>
+  </test> <!-- Admin login testcase(failed) -->
+  <test name="Banker login testcase(failed)">
+    <parameter name="uid" value="gopiqedge"/>
+    <parameter name="pwd" value="Admin"/>
+    <parameter name="brname" value="Kakinada"/>
+    <classes>
+      <class name="primusbank.tests.BankerLoginTest">
+        <methods>
+          <include name="checkBankerLogin" invocation-numbers="0"/>
+          <include name="launchApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- primusbank.tests.BankerLoginTest -->
+    </classes>
+  </test> <!-- Banker login testcase(failed) -->
+</suite> <!-- Failed suite [primusbank test suite] -->
